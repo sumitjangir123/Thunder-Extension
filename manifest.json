@@ -1,0 +1,19 @@
+{
+    "name": "Thunder-Meet",
+    "description" : "for sharing google sheet id with Thunder Meet",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "content_scripts": [
+      {
+        "matches": ["*://docs.google.com/spreadsheets/d/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "browser_action": {
+      "default_popup":"popup.html",
+      "default_title": "Thunder-Meet"
+    },
+    "icons": {
+      "128": "images/logo.png"
+    }
+  }
